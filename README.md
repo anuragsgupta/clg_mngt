@@ -1,5 +1,7 @@
 # Welcome to College Management Software
 
+Credit: GUI Base is Taken from @DJ-Raven www.github.com/DJ-Raven 
+
 ## Requirements
 - Java Version 17
 -  Internet Connection
