@@ -3,8 +3,7 @@
 ## Requirements
 - Java Version 17
 -  Internet Connection
-## ScreenShot
-![Home Page](./screenshot/home.png "Home")
+
 ## Features
 
 - New Student
@@ -26,3 +25,8 @@
 - Java Swing | GUI
 - PostgresSQL |  Database
 - Jasper report | Report Generation
+
+## ScreenShot
+![Home Page](./screenshot/home.png "Home")
+![New Admission](./screenshot/new%20admission.png "new admission")
+![Salary Page](./screenshot/my%20salary.png "Home")
