@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 9.0.0.final using JasperReports Library version 6.21.0-4f56c4f36cd19e17675219a9ac4692d5f0f13b06  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="studentReport" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="38195f43-e4ed-4cf8-8a26-3af88e051a77">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="240"/>
+	<parameter name="RollNo" class="java.lang.String"/>
+	<parameter name="Name" class="java.lang.String"/>
+	<parameter name="Dob" class="java.lang.String"/>
+	<parameter name="Gender" class="java.lang.String"/>
+	<parameter name="FatherName" class="java.lang.String"/>
+	<parameter name="caste" class="java.lang.String"/>
+	<parameter name="emailId" class="java.lang.String"/>
+	<parameter name="mobileNo" class="java.lang.String"/>
+	<parameter name="enrollment" class="java.lang.String"/>
+	<parameter name="branch" class="java.lang.String"/>
+	<parameter name="marksTenth" class="java.lang.String"/>
+	<parameter name="Parameter7" class="java.io.InputStream"/>
+	<parameter name="aadhar" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="rolno" class="java.lang.String"/>
+	<parameter name="batch" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="802" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="553" height="1" uuid="c349aa28-7575-45ad-9546-0f4d18d78429"/>
+			</line>
+			<staticText>
+				<reportElement x="2" y="2" width="550" height="39" uuid="0a601d21-c754-41e5-8992-aa407daaf98a"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[GOVERNMENT POLYTECHNIC COLLEGE, SIRONJ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="40" width="550" height="30" uuid="a275ac5f-f2f5-4177-a61a-0dac496d9839"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Lateri Road, Distt. Vidisha, Madhya Pradesh Pin Code-464228]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="70" width="551" height="1" uuid="7aba2a89-7938-4639-b2d0-9da6dffa48d7"/>
+				<graphicElement>
+					<pen lineWidth="6.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="30" y="40" width="491" height="1" uuid="a3c37443-55a8-48b9-9de8-46118bf2d092"/>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="1" y="2" width="1" height="795" uuid="90422cc5-2b28-449d-95d7-13182db3cb32"/>
+			</line>
+			<line>
+				<reportElement x="-4700" y="795" width="551" height="1" uuid="c0e2d264-42e7-44c8-8d75-d4c169139eac"/>
+			</line>
+			<line>
+				<reportElement x="552" y="3" width="1" height="793" uuid="75ff9338-4d49-4181-a7c7-82aedc59c3b8"/>
+			</line>
+			<line>
+				<reportElement x="0" y="101" width="552" height="1" uuid="e09bb4db-dfb7-4446-ad11-1dfdef2ef043"/>
+			</line>
+			<staticText>
+				<reportElement x="90" y="71" width="400" height="30" uuid="bd92d394-6c02-407f-82aa-1e53b7572fa6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Student Admission Report ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="362" width="551" height="1" uuid="74671bc9-1c9a-411e-bd47-d57d17d716d5"/>
+			</line>
+			<staticText>
+				<reportElement x="23" y="120" width="116" height="20" uuid="2f3999e8-c305-46e9-b675-365e70c131b4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Personal Detail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="150" width="100" height="20" uuid="8b8d454d-be9c-42ea-bf67-c821f05e3dfc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rollno ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="180" width="99" height="20" uuid="67ca9905-bbd0-48d3-80c1-35c83478f630"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Applicant's Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="240" width="98" height="20" uuid="656a9ad4-5840-49bc-9f4b-8225a71af9ca"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Date of Birth ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="270" width="98" height="20" uuid="9e226274-337a-4b3a-8a4f-5f2dc66bd3cb"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="210" width="99" height="20" uuid="388642d7-2c6c-44a5-8008-059146b2c6ad"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Father Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="180" width="160" height="20" uuid="6ea22d0b-1d19-49b9-afe4-3f40c60ce8c3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="240" width="103" height="20" uuid="ebe96bb4-1b3b-49d4-97ae-8561a187a7af"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="270" width="100" height="20" uuid="f26a3689-34e6-424d-b16d-deb17abb69aa"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="210" width="162" height="20" uuid="2360545b-6e02-43fd-9cb3-1da7ef2b8d30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{FatherName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="24" y="487" width="108" height="20" uuid="3e2e7acf-b1c5-4b71-8ce5-441f9d005c96"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Admission Detail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="517" width="100" height="20" uuid="5de14982-1fdd-4555-a30f-feded1d15422"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Enrollment No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="48" y="557" width="101" height="20" uuid="7e937f52-8769-442e-9f91-6e2340d671f2"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Enrolled Branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="331" width="80" height="20" uuid="7de7b888-b904-4079-8ce9-85b28847fc7c"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aadhar No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="300" width="98" height="20" uuid="56645b54-fd29-41b7-840a-1c9aad1fec15"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Catergory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="434" width="104" height="20" uuid="0938164a-df2a-4c36-992d-80a5724406cd"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="403" width="102" height="20" uuid="fbeb74e5-84e2-42f1-af7e-ead091bb54f3"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="403" width="80" height="20" uuid="621dccc2-1026-4deb-ac4a-9d405bf9c848"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="110" width="100" height="14" uuid="359114ac-d418-4261-9a5a-c0dd5e912b92"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="597" width="100" height="20" uuid="8ff9be68-74c5-48d7-987e-9c0ec4a4a73d"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[10th Marks ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="797" width="551" height="1" uuid="85156e72-bd85-4c44-a27c-f2aa41e2e3f2"/>
+			</line>
+			<line>
+				<reportElement x="3" y="630" width="551" height="1" uuid="277c9484-40a4-4a1b-8d2f-968daf9303b2"/>
+			</line>
+			<line>
+				<reportElement x="400" y="760" width="120" height="1" uuid="34883c6a-51d7-4ecb-b471-7b0d693ad952"/>
+			</line>
+			<staticText>
+				<reportElement x="400" y="760" width="120" height="18" uuid="c004592c-e98e-407e-b87a-b94c5b501fc2"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Principal Sign]]></text>
+			</staticText>
+			<line>
+				<reportElement x="31" y="760" width="120" height="1" uuid="b5bc11ae-a6c7-4c0a-b652-5462a85e92cf"/>
+			</line>
+			<staticText>
+				<reportElement x="31" y="760" width="120" height="18" uuid="1ef0984b-cdaa-44ed-a625-793f1c34b026"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Student Sign]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="171" y="300" width="106" height="20" uuid="dd88650b-d869-4fac-aa10-4763078ecf72"/>
+				<textFieldExpression><![CDATA[$P{caste}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="434" width="256" height="39" uuid="c114b6e1-e112-4faa-a8c1-d9eab178a222"/>
+				<textElement verticalAlignment="Top">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emailId}.toLowerCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="404" width="102" height="20" uuid="0b2cf353-eb12-4791-b9e6-bcd0d0a84376"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mobileNo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="517" width="100" height="20" uuid="e7f70eab-ccaa-429f-ac1a-6462c9fabb54"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{enrollment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="557" width="100" height="20" uuid="a6766080-49c3-4c4b-b303-0314c0fdcb63"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="597" width="100" height="20" uuid="318a74e1-f6bc-49b7-b759-47ae0bede54e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{marksTenth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="332" width="107" height="19" uuid="be905a72-16f4-4af4-ab42-9ccd9a1952f1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aadhar}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="370" width="119" height="20" uuid="98ffa7c3-ae10-49e0-baf4-0100cb17ecae"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact Detail]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="478" width="551" height="1" uuid="3f6f74ff-624d-4863-8c2d-0a92724078e0"/>
+			</line>
+			<textField>
+				<reportElement x="419" y="404" width="126" height="69" isRemoveLineWhenBlank="true" uuid="10953b79-7346-478f-b6cb-7ebf8941d41f"/>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" onErrorType="Icon">
+				<reportElement key="" x="230" y="150" width="384" height="140" uuid="8cfabd08-3c42-492b-b2c2-442bd531f6f5"/>
+				<imageExpression><![CDATA[$P{Parameter7}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="170" y="150" width="94" height="20" uuid="4cd989bb-777f-408a-85bc-6f46faf276c4"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{rolno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="339" y="560" width="80" height="20" uuid="83811cd7-3160-42cf-8077-709f6b25bc27"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Batch ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="420" y="561" width="100" height="19" uuid="1475fc33-2231-455e-b310-e0e982bc8b6e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{batch}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="15078961-034c-4635-9b85-0a7956c27434">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     admissionform.`firstName` AS admissionform_firstName,
+     admissionform.`lastName` AS admissionform_lastName,
+     admissionform.`fatherName` AS admissionform_fatherName,
+     admissionform.`Email_ID` AS admissionform_Email_ID,
+     admissionform.`mobileNumber` AS admissionform_mobileNumber,
+     admissionform.`branch` AS admissionform_branch,
+     admissionform.`Batch` AS admissionform_Batch,
+     admissionform.`category` AS admissionform_category,
+     admissionform.`Gender` AS admissionform_Gender,
+     admissionform.`address` AS admissionform_address
+FROM
+     `admissionform` admissionform]]>
+	</queryString>
+	<field name="admissionform_firstName" class="java.lang.String"/>
+	<field name="admissionform_lastName" class="java.lang.String"/>
+	<field name="admissionform_fatherName" class="java.lang.String"/>
+	<field name="admissionform_Email_ID" class="java.lang.String"/>
+	<field name="admissionform_mobileNumber" class="java.lang.String"/>
+	<field name="admissionform_branch" class="java.lang.String"/>
+	<field name="admissionform_Batch" class="java.math.BigDecimal"/>
+	<field name="admissionform_category" class="java.lang.String"/>
+	<field name="admissionform_Gender" class="java.lang.String"/>
+	<field name="admissionform_address" class="java.lang.String"/>
+	<group name="admissionform_branch">
+		<groupExpression><![CDATA[$F{admissionform_branch}]]></groupExpression>
+	</group>
+	<group name="admissionform_Batch">
+		<groupExpression><![CDATA[$F{admissionform_Batch}]]></groupExpression>
+	</group>
+	<group name="admissionform_category">
+		<groupExpression><![CDATA[$F{admissionform_category}]]></groupExpression>
+	</group>
+	<group name="admissionform_Gender">
+		<groupExpression><![CDATA[$F{admissionform_Gender}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="45" uuid="df84ed97-4ebc-409c-a9e1-875f00c82d76"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[GOVT. POLYTECHNIC COLLEGE SIRONJ, Dist VIDISHA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="35" uuid="d51c8174-0e8f-4829-8052-790c36611d17"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[REPORT FY ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="341" y="0" width="100" height="35" uuid="c17c797b-47bb-477c-b6a5-dc4728265542"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_Batch}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yy">
+				<reportElement x="452" y="15" width="100" height="20" uuid="119d353d-63bc-4c3b-a6af-d1600407d88e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="0" width="80" height="20" uuid="6755e187-b7a2-4bfc-a345-16dedbbe1acd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[First Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="92" y="0" width="92" height="20" uuid="fb0f35fa-60f4-4972-a80d-abd645196bce"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Last Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="184" y="0" width="92" height="20" uuid="ae61cba8-54d6-471f-a43d-d9098327dfb7"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Catergory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="92" height="20" uuid="960d13f4-465b-40ec-9475-499e1faf90b2"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="0" width="92" height="20" uuid="7234d3df-5189-4241-b6c4-5c5a8929b991"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="92" height="20" uuid="7df6dd4e-0a90-4450-81bc-498487b08559"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Batch]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="92" y="0" width="92" height="20" uuid="bb820210-a9a1-462b-875b-2380f54520a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="0" width="80" height="20" uuid="7b55426c-3cb2-4e5a-98ac-84388114f7d3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="92" height="20" uuid="181f6978-d322-4d9a-bdd7-44cf88c2061d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_category}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="92" height="20" uuid="1ff62892-5c9d-4ac0-b45f-846b95e071a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_Gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="0" width="92" height="20" uuid="c02af5ed-88fc-49e0-956f-d7ee87fe59d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="92" height="20" uuid="7dbbd507-b6e0-4798-a3b9-7cd805dcce00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{admissionform_Batch}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
