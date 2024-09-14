@@ -4,7 +4,7 @@
 - Java Version 17
 -  Internet Connection
 ## ScreenShot
-![alt text](.\screenshot\home.png "Hme")
+![Home Page](./screenshot/home.png "Home")
 ## Features
 
 - New Student
